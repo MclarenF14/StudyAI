@@ -1,0 +1,56 @@
+.activity-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin: 32px auto;
+  max-width: 900px;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .activity-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+.activity-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(100, 100, 255, 0.10);
+  padding: 32px 24px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+.activity-card:hover {
+  box-shadow: 0 8px 32px rgba(100, 100, 255, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+.activity-icon {
+  margin-bottom: 16px;
+}
+.activity-title {
+  font-size: 1.5rem;
+  color: #6a7bff;
+  margin-bottom: 8px;
+}
+.activity-desc {
+  color: #555;
+  margin-bottom: 18px;
+}
+.activity-btn {
+  background: linear-gradient(90deg, #6a7bff 0%, #b47cff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(100, 100, 255, 0.10);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.activity-btn:hover {
+  background: linear-gradient(90deg, #b47cff 0%, #6a7bff 100%);
+  box-shadow: 0 4px 16px rgba(100, 100, 255, 0.18);
+}

@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(135deg, #4f8cff 0%, #38e8ff 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 32px 24px;
+}
+
+h1 {
+  color: #2563eb;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #555;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+button, input, select {
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin: 8px 0;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  background: #1e40af;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+.activity-section {
+  margin-top: 24px;
+}
+
+.generated-section {
+  margin-top: 32px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 16px 0;
+}
